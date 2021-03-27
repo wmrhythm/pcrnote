@@ -1,0 +1,66 @@
+﻿{
+  "tcpPortNum": {
+    "description": "接続ポート番号",
+    "value": 59630
+  },
+  "useSSL": {
+    "description": "SSLを使用するか",
+    "value": false
+  },
+  "sslKeyPath": {
+    "description": "SSL通信用の秘密鍵のパス",
+    "value": "/home/pcruser/ssl/private.key"
+  },
+  "sslCertPath": {
+    "description": "SSL通信用の証明書のパス",
+    "value": "/home/pcruser/ssl/server.crt"
+  },
+  "wwwDir": {
+    "descriptions": [
+      "ドキュメントルート(公開)ディレクトリ",
+      "パス設定例(末尾の/はあってもなくても可)",
+      "Linux: /home/pcruser/pcrnote/",
+      "Windows: E:/Files/pcrnote/"
+    ],
+    "value": "E:/Files/pcrnote/"
+  },
+  "dataDir": {
+    "descriptions": [
+      "データディレクトリ",
+      "どこに置いてもブラウザから直接アクセス不可"
+    ],
+    "value": "E:/Files/pcrnote/data/"
+  },
+  "backupDir": {
+    "descriptions": [
+      "データのバックアップディレクトリ",
+      "どこに置いてもブラウザから直接アクセス不可"
+    ],
+    "value": "E:/Files/pcrnote/data/backup/"
+  },
+  "autoBackupData": {
+    "description": "更新毎にデータのバックアップを行うか",
+    "value": true
+  },
+  "receivedDataSizeMax": {
+    "description": "受信データ最大サイズ",
+    "value": 51200
+  },
+  "availableAuthorityList": {
+    "descriptions": [
+      "利用可能権限一覧",
+      "空文字は誰でもorどれでも利用可",
+      "ユーザー名、データベース名に利用出来る文字数には上限、下限あり",
+      "ユーザー名に使用出来る文字種に制限はなし",
+      "データベース名に使用出来る文字種は以下の通り",
+      "アルファベット小文字、数字、アンダースコアのみ(ファイル名に利用するため)",
+      "末尾にアンダースコアが付く名前は不可(バックアップ時に\"_日時\"を付加するため)"
+    ],
+    "values": [
+      {"userName": "otakukorosu", "dbName": "otakukorosu"},
+      {"userName": "", "dbName": ""},
+      {"userName": "ノートの作成者", "dbName": "arena"},
+      {"userName": "ノートの作成者", "dbName": "clanbattle"}
+    ]
+  }
+}
